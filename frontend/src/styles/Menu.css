@@ -1,0 +1,17 @@
+.menu {
+    padding: 20px;
+  }
+  
+  .menu h2 {
+    font-size: 28px;
+    color: #ffcc00;
+  }
+  
+  .menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  

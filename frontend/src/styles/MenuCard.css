@@ -1,0 +1,28 @@
+.menu-card {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .menu-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+  }
+  
+  .menu-card h3 {
+    margin: 10px 0;
+  }
+  
+  .menu-card p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
