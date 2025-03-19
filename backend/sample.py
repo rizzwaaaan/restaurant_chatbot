@@ -1,5 +1,6 @@
-import pymysql
 
+#user and password creation
+import pymysql
 try:
     connection = pymysql.connect(
         host='localhost',

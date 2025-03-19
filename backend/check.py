@@ -1,3 +1,4 @@
+# Menu db creation code
 import sqlite3
 
 conn = sqlite3.connect("menu.db")
