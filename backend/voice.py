@@ -1,6 +1,6 @@
 import speech_recognition as sr
 from gtts import gTTS
-import os
+from playsound import playsound
 
 def speech_to_text():
     recognizer = sr.Recognizer()
@@ -12,4 +12,4 @@ def speech_to_text():
 def text_to_speech(text):
     tts = gTTS(text)
     tts.save("output.mp3")
-    os.system("mpg321 output.mp3")
+    playsound("output.mp3")

@@ -9,7 +9,7 @@ class Menu(db.Model):
     type = db.Column(db.String(50), nullable=False)  # 'veg' or 'non-veg'
     category = db.Column(db.String(50), nullable=False)  # 'appetizer', 'main course', 'dessert'
     price = db.Column(db.Float, nullable=False)
-    image_url = db.Column(db.Text, nullable=False)  # Using Text for long URLs
+    image_url = db.Column(db.Text, nullable=False)
 
 class Customer(db.Model):
     __tablename__ = 'customers'
@@ -17,7 +17,7 @@ class Customer(db.Model):
     name = db.Column(db.String(255), nullable=False)
     phone = db.Column(db.String(15), unique=True, nullable=True)
     email = db.Column(db.String(255), unique=True, nullable=True)
-    preferences = db.Column(db.JSON, nullable=True)  # Use JSONB for efficient querying
+    preferences = db.Column(db.JSON, nullable=True)
 
 class Reservation(db.Model):
     __tablename__ = 'reservations'

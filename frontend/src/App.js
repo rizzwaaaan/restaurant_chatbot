@@ -6,7 +6,6 @@ import Menu from "./pages/Menu";
 import Reservation from "./pages/Reservation";
 import Order from "./pages/Order";
 import "./styles/App.css";
-
 function App() {
   return (
     <Router>
@@ -17,7 +16,6 @@ function App() {
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/order" element={<Order />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
